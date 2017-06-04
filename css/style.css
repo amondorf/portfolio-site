@@ -1,0 +1,205 @@
+* {
+   /*border: 1px solid red !important;*/
+}
+
+body {
+  margin: 4em;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover.underline {
+  border-bottom: 4px solid #FFFF00;
+  padding-bottom:2px;
+}
+
+.underlined {
+  border-bottom: 4px solid #FFFF00;
+  padding-bottom:2px;
+}
+
+.underlined-thin {
+  border-bottom: 2px solid #FFFF00;
+  padding-bottom:2px;
+}
+
+li {
+  list-style: none;
+}
+
+.frame {
+  background: #f4decb;
+}
+
+.navigation {
+  padding: 1em 0 1em 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 3em;
+  letter-spacing: 0.4em;
+}
+
+.brand {
+  /*font-family: 'Barrio', cursive;*/
+  padding: 0.6em 0 0 0;
+  margin: 0;
+}
+
+.social {
+  font-size: 20px;
+  display: inline;
+  padding: 0 15px 0 2px;
+}
+
+.welcome {
+  font-size: 18px;
+  padding: 80px 50px 100px 180px;
+  line-height: 1.5em;
+}
+
+.box-zero {
+  letter-spacing: 0.2em;
+  padding-bottom: 10px;
+}
+
+.box-one {
+  margin: 10px 0 0 1000px;
+}
+
+.box-two {
+  margin-left: 1000px;
+}
+
+.box-three {
+  margin: 0 0 10px 0;
+}
+
+.box-four {
+  margin: 10px 350px 10px 10px;
+  padding: 10px 0 10px 0;
+}
+
+.box-five {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.color-box-left {
+  margin-left: -1000px;
+  margin-bottom: 10px;
+  background-color: yellow;
+  padding: 3px 0 10px 0;
+}
+
+.color-box-right {
+  margin-right: -350px;
+  background-color: yellow;
+}
+
+.hide {
+  display: none;
+}
+
+.bar {
+  width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.hamburger {
+  background-color: #f4decb;
+  float: right;
+  margin-right: 10px;
+  margin-top: -10px;
+  border:0px solid transparent;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+/*----------------------<<<<<<<<<<< changing colors >>>>>>>>>>--------------------------*/
+/*-------------------------------<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>-----------------------*/
+.color {
+  -webkit-animation: color_change 3s infinite alternate;
+	-moz-animation: color_change 3s infinite alternate;
+	-ms-animation: color_change 3s infinite alternate;
+	-o-animation: color_change 3s infinite alternate;
+	animation: color_change 3s infinite alternate;
+  animation-name: color_change;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes color_change {
+	from {color: black; }
+	to { color: #FFFF00; }
+}
+@-moz-keyframes color_change {
+  from {color: black; }
+  to { color: #FFFF00; }
+}
+@-ms-keyframes color_change {
+  from {color: black; }
+	to { color: #FFFF00; }
+}
+@-o-keyframes color_change {
+  from {color: black; }
+	to { color: #FFFF00; }
+}
+@keyframes color_change {
+  from {color: black; }
+	to { color: #FFFF00; }
+}
+
+/*----------------------<<<<<<<<<<< mobile responsive >>>>>>>>>>--------------------------*/
+/*-------------------------------<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>-----------------------*/
+@media (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .menu {
+    display: inline;
+  }
+
+  .navigation {
+    display: none;
+    padding-left: 4em;
+  }
+
+  .welcome {
+    padding: 80px 0 20px 0;
+  }
+
+  .box-one {
+    margin: 10px 0 0 1000px;
+  }
+
+  .box-four {
+    padding: 10px 15px 0 0;
+    margin-right: 0px;
+  }
+
+  .color-box-right {
+    margin-right: -15px;
+  }
+
+  .mobile-footer {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
